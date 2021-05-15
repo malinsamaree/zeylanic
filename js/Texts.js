@@ -91,8 +91,7 @@ class Texts {
     <p>
     Unsere Websiten und Apps testen wir auf allen gängigen Browsern und Geräten, damit alle Nutzer eine gute und angenehme Erfahrung 
     machen – und wieder-kommen
-    </p>
-    `,
+    </p>`,
     recTitle: "",
     recText1: "",
     recPersonDesignation1: "",
