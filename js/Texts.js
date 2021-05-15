@@ -92,7 +92,7 @@ class Texts {
     Unsere Websiten und Apps testen wir auf allen gängigen Browsern und Geräten, damit alle Nutzer eine gute und angenehme Erfahrung 
     machen – und wieder-kommen
     </p>`,
-    recTitle: "",
+    recTitle: "q",
     recText1: "",
     recPersonDesignation1: "",
     recText2: "",
