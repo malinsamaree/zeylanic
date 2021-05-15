@@ -1,0 +1,566 @@
+@import "_commonvars.scss";
+.process {
+  width: 100%;
+}
+
+.process-inner {
+  padding: 5%;
+}
+
+.process-title {
+  font-size: 36px;
+}
+
+.process-content-inner {
+  width: 100%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas:
+    "brainstrom brainstrom brainstrom brainstrom arrow1 strategy strategy strategy strategy strategy"
+    ". . . . . . . . arrow2 arrow2"
+    "review review  arrow4 design design design design arrow3  prototype prototype"
+    "arrow5 arrow5 . . . . . . . ."
+    "test test arrow6 completion completion completion arrow7 maintenance maintenance maintenance";
+}
+
+.process-block {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.process-block-title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.process-block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.process-block-content-with-headings {
+  position: relative;
+  padding: 45px;
+  width: 100%;
+  text-align: center;
+  min-height: 200px;
+  height: 100%;
+}
+
+.process-block-content-with-headings-inner {
+  padding: 15px;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-block-content-topic {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.process-block-1 {
+  grid-area: brainstrom;
+}
+
+.process-block-2 {
+  grid-area: strategy;
+}
+
+.process-block-3 {
+  grid-area: prototype;
+}
+
+.process-block-4 {
+  grid-area: design;
+}
+
+.process-block-5 {
+  grid-area: review;
+}
+
+.process-block-6 {
+  grid-area: test;
+}
+
+.process-block-7 {
+  grid-area: completion;
+}
+
+.process-block-8 {
+  grid-area: maintenance;
+}
+
+.process-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow-inner {
+  width: 80px;
+  height: 10px;
+  position: relative;
+  background: $arrow-color;
+}
+.arrow-head {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  transform: rotate(45deg) translate(-20%, -25%);
+  border-top: $arrow-color solid 10px;
+  border-right: $arrow-color solid 10px;
+}
+
+.arrow-inner-1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-top: $arrow-color solid 10px;
+  border-bottom: $arrow-color solid 10px;
+  border-right: white solid 10px;
+  border-left: white solid 10px;
+  background: none;
+}
+
+.arrow-head-1 {
+  transform: rotate(85deg) translate(-35%, -5%);
+}
+
+.arrow-head-2 {
+  bottom: 0;
+  left: 0;
+  transform: rotate(-90deg) translate(-40%, 0);
+}
+
+.process-arrow-1 {
+  grid-area: arrow1;
+}
+.process-arrow-2 {
+  grid-area: arrow2;
+  transform: rotate(90deg);
+  height: 100px;
+}
+.process-arrow-3 {
+  grid-area: arrow3;
+  transform: rotate(180deg);
+}
+.process-arrow-4 {
+  grid-area: arrow4;
+  transform: rotate(180deg);
+}
+.process-arrow-5 {
+  grid-area: arrow5;
+  transform: rotate(90deg);
+  height: 100px;
+}
+.process-arrow-6 {
+  grid-area: arrow6;
+}
+.process-arrow-7 {
+  grid-area: arrow7;
+}
+
+// brainstrom #########################################################
+
+.brainstroming-content-inner {
+  background: $color1;
+  color: white;
+}
+
+.brainstroming-topic {
+  border: $color1 solid 2px;
+}
+.brainstroming-topic:hover {
+  background: $color1;
+  color: white;
+  cursor: pointer;
+}
+
+.brainstroming-topic-1 {
+  top: 0;
+  left: 20%;
+  background: $color1;
+  color: white;
+}
+
+.brainstroming-topic-2 {
+  top: 0;
+  right: 20%;
+}
+.brainstroming-topic-3 {
+  top: 50%;
+  left: 0;
+  transform: translate(-25%, -50%) rotate(270deg);
+}
+.brainstroming-topic-4 {
+  bottom: 50%;
+  right: 0;
+  //   transform: ;
+  transform: translate(25%, 50%) rotate(90deg);
+}
+.brainstroming-topic-5 {
+  bottom: 0;
+  left: 20%;
+}
+.brainstroming-topic-6 {
+  bottom: 0;
+  right: 20%;
+}
+
+// strategy ###############################################################
+
+.strategy-content-inner {
+  background: $color2;
+}
+
+.strategy-topic {
+  border: $color2 solid 2px;
+}
+
+.strategy-topic:hover {
+  background: $color2;
+}
+
+.strategy-topic-1 {
+  bottom: 0;
+  left: 20%;
+}
+
+.strategy-topic-2 {
+  top: 0;
+  right: 20%;
+}
+.strategy-topic-3 {
+  top: 0;
+  left: 20%;
+  background: $color2;
+}
+.strategy-topic-4 {
+  bottom: 0;
+  right: 20%;
+}
+
+//design #######################################################
+
+.design-content-inner {
+  background: $color3;
+  color: white;
+}
+
+.design-topic {
+  border: $color3 solid 2px;
+}
+.design-topic:hover {
+  background: $color3;
+  color: white;
+}
+
+.design-topic-1 {
+  top: 0;
+  left: 20%;
+  background: $color3;
+  color: white;
+}
+
+.design-topic-2 {
+  top: 0;
+  right: 20%;
+}
+.design-topic-3 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//prototype ####################################################
+.process-block-content-without-headings {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+.process-block-content-without-headings-inner {
+  padding: 15px;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prototype-content {
+  background: $color4;
+}
+.review-content {
+  background: $color5;
+  color: white;
+}
+.test-content {
+  background: $color6;
+}
+.deploy-content {
+  background: $color7;
+  color: white;
+}
+.maintenance-content {
+  background: $color8;
+}
+
+@media only screen and (max-width: 1300px) {
+  .process-content-inner {
+    grid-template-areas:
+      "brainstrom brainstrom brainstrom brainstrom brainstrom arrow1 strategy strategy strategy strategy"
+      ". . . . . . arrow2 arrow2 arrow2 arrow2"
+      "design design design design design arrow3 prototype prototype prototype prototype"
+      "arrow4 arrow4 arrow4 arrow4  . . . . . ."
+      "review review review review arrow5 test test test test test"
+      ". . . . . . arrow6 arrow6 arrow6 arrow6"
+      "maintenance maintenance maintenance maintenance maintenance arrow7 completion completion completion completion";
+    // row-gap: 100px;
+  }
+  .process-arrow {
+    height: 100%;
+  }
+  .process-arrow-2 {
+    height: 100px;
+  }
+  .process-arrow-4 {
+    transform: rotate(90deg);
+  }
+
+  .process-arrow-5 {
+    transform: rotate(0deg);
+    // height: 100%;
+  }
+  .process-arrow-6 {
+    transform: rotate(90deg);
+    height: 100px;
+    // width: 100%;
+  }
+  .process-arrow-7 {
+    transform: rotate(180deg);
+    // height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .process-content-inner {
+    grid-template-areas:
+      "brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom"
+      "arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1"
+      "strategy strategy strategy strategy strategy strategy strategy strategy strategy strategy"
+      ". . . . . . arrow2 arrow2 arrow2 arrow2"
+      "design design design design design arrow3 prototype prototype prototype prototype"
+      "design design design design design arrow4 review review review review"
+      ". . . . . . arrow5 arrow5 arrow5 arrow5"
+      "completion completion completion completion completion arrow6  test test test test"
+      "arrow7 arrow7 arrow7 arrow7 arrow7 . . . . . "
+      "maintenance maintenance maintenance maintenance maintenance maintenance maintenance maintenance maintenance maintenance";
+
+    row-gap: 30px;
+  }
+
+  .process-arrow {
+    height: 100%;
+  }
+  .process-arrow-1 {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+  .process-arrow-2 {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+  .process-arrow-3 {
+    transform: rotate(180deg);
+  }
+  .process-arrow-4 {
+    transform: rotate(0);
+  }
+  .process-arrow-5 {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+  .process-arrow-6 {
+    transform: rotate(180deg);
+  }
+  .process-arrow-7 {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+
+  .process-block-content-without-headings-inner {
+    // min-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .process-content-inner {
+    grid-template-areas:
+      "brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom"
+      "arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1"
+      "strategy strategy strategy strategy strategy strategy strategy strategy strategy strategy"
+      "arrow2 arrow2 arrow2 arrow2 arrow2 arrow2 arrow2 arrow2 arrow2 arrow2"
+      "prototype prototype prototype prototype prototype prototype prototype prototype prototype prototype "
+      "arrow3 arrow3 arrow3 arrow3 arrow3 arrow3 arrow3 arrow3 arrow3 arrow3"
+      "design design design design design design design design design design"
+      ". . . . . arrow4 arrow4 arrow4 arrow4 arrow4"
+      "test test test test arrow5 review review review review review "
+      "arrow6 arrow6 arrow6 arrow6 . . . . . ."
+      "completion completion completion completion completion arrow7 maintenance maintenance maintenance maintenance";
+
+    row-gap: 0;
+  }
+  .process-arrow {
+    height: 100%;
+  }
+  .process-arrow-1 {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+  .process-arrow-2 {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+  .process-arrow-3 {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+  .process-arrow-4 {
+    transform: rotate(90deg);
+  }
+  .process-arrow-5 {
+    transform: rotate(180deg);
+  }
+  .process-arrow-6 {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+  .process-arrow-7 {
+    transform: rotate(0);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .process-content-inner {
+    grid-template-areas:
+      "brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom brainstrom"
+      "arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1 arrow1"
+      "strategy strategy strategy strategy strategy strategy strategy strategy strategy strategy"
+      "arrow2 arrow2 arrow2 arrow2 arrow2 arrow2 arrow2 arrow2 arrow2 arrow2"
+      "prototype prototype prototype prototype prototype prototype prototype prototype prototype prototype "
+      "arrow3 arrow3 arrow3 arrow3 arrow3 arrow3 arrow3 arrow3 arrow3 arrow3"
+      "design design design design design design design design design design"
+      "arrow4 arrow4 arrow4 arrow4 arrow4 arrow4 arrow4 arrow4 arrow4 arrow4"
+      "review review review review review review review review review review "
+      "arrow5 arrow5 arrow5 arrow5 arrow5 arrow5 arrow5 arrow5 arrow5 arrow5"
+      "test test test test test test test test test test "
+      "arrow6 arrow6 arrow6 arrow6 arrow6 arrow6 arrow6 arrow6 arrow6 arrow6"
+      "completion completion completion completion completion completion completion completion completion completion "
+      "arrow7 arrow7 arrow7 arrow7 arrow7 arrow7 arrow7 arrow7 arrow7 arrow7"
+      "maintenance maintenance maintenance maintenance maintenance maintenance maintenance maintenance maintenance maintenance ";
+  }
+  .process-arrow {
+    transform: rotate(90deg);
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  $padding: 5px;
+  .process-block-title-1 {
+    margin-bottom: 120px;
+  }
+  .process-block-content-topic {
+    // height: 50px;
+  }
+  .process-block-content-with-headings {
+    padding: $padding;
+  }
+
+  .process-block-content-with-headings-inner {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .brainstroming-topic-1 {
+    height: 30px;
+    top: 0;
+    left: 0;
+    background: $color1;
+    color: white;
+    transform: rotate(90deg) translate(-58px, 0);
+  }
+
+  .brainstroming-topic-2 {
+    height: 30px;
+
+    top: 0;
+    left: 40px;
+    transform: rotate(90deg) translate(-58px, 0);
+  }
+  .brainstroming-topic-3 {
+    height: 30px;
+    top: 0;
+    left: 80px;
+    transform: rotate(90deg) translate(-58px, 0);
+  }
+  .brainstroming-topic-4 {
+    height: 30px;
+    top: 0;
+    left: 120px;
+    transform: rotate(90deg) translate(-58px, 0);
+  }
+  .brainstroming-topic-5 {
+    height: 30px;
+    top: 0;
+    left: 160px;
+    transform: rotate(90deg) translate(-58px, 0);
+  }
+  .brainstroming-topic-6 {
+    height: 30px;
+    top: 0;
+    left: 200px;
+    transform: rotate(90deg) translate(-58px, 0);
+  }
+
+  .strategy-topic-1 {
+    top: 0;
+    left: 0;
+    transform: rotate(90deg) translate(-68px, 0);
+  }
+
+  .strategy-topic-2 {
+    top: 0;
+    left: 60px;
+    transform: rotate(90deg) translate(-68px, 0);
+  }
+  .strategy-topic-3 {
+    top: 0;
+    left: 120px;
+    transform: rotate(90deg) translate(-68px, 0);
+  }
+  .strategy-topic-4 {
+    top: 0;
+    left: 180px;
+    transform: rotate(90deg) translate(-68px, 0);
+  }
+}

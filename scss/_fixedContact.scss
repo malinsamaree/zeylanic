@@ -1,0 +1,64 @@
+.fixed-contact-view {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 320px;
+  background: black;
+  z-index: 500;
+  color: white;
+  display: flex;
+}
+
+.fixed-contact-view-left {
+  width: 30px;
+  // background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  // position: relative;
+}
+
+.fixed-contact-view-left-text {
+  background: rgb(93, 93, 93);
+  text-align: center;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.fixed-contact-view-right {
+  width: 290px;
+}
+
+.fixed-contact-view-form {
+  padding: 15px;
+}
+.fixed-contact-view-form input,
+.fixed-contact-view-form textarea,
+.fixed-contact-view-form select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  background: black;
+  border: none;
+  border-bottom: grey solid 3px;
+  color: grey;
+}
+
+.fixed-contact-view-form input:focus,
+.fixed-contact-view-form textarea:focus,
+.fixed-contact-view-form select:focus {
+  outline: none;
+}
+
+.fixed-contact-view-form textarea {
+  height: 60px;
+}
+
+.fixed-contact-view-form input[type="submit"] {
+  // border: grey solid 3px;
+  border: none;
+  background: red;
+  color: white;
+}

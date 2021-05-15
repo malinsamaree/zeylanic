@@ -1,0 +1,27 @@
+@import "_commonvars.scss";
+.language {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  z-index: 2000;
+  background: $color1;
+  color: white;
+}
+.language-inner {
+  display: flex;
+}
+.language-each {
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.language-each:hover {
+  background: $color2;
+}
+.active {
+  background: $color2;
+  color: black;
+  font-weight: bold;
+  cursor: default;
+  text-decoration: underline;
+}

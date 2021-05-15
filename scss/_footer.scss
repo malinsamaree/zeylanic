@@ -1,0 +1,34 @@
+@import "_commonvars.scss";
+
+.footer {
+  width: 100%;
+  background: $color3;
+  color: white;
+}
+.footer-inner {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-middle {
+  width: 50px;
+  height: 50px;
+  background: url("../images/fb.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.legal-text-link {
+  cursor: pointer;
+}
+.legal-text-link:hover {
+  text-decoration: underline;
+}

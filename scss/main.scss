@@ -1,0 +1,40 @@
+@import "_home.scss";
+@import "_unique.scss";
+@import "_mainRef.scss";
+@import "_imagine.scss";
+@import "_recommendation.scss";
+@import "_steps.scss";
+@import "_knowhow.scss";
+@import "_graphics.scss";
+@import "_contact.scss";
+@import "_footer.scss";
+@import "_fixedContact.scss";
+@import "_menu.scss";
+@import "_legalText.scss";
+@import "_languages.scss";
+@import "_cookies.scss";
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  // transition: 0.2s ease-in-out;
+}
+
+button {
+  border: none;
+}
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.root {
+  position: relative;
+}

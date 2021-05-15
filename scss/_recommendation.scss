@@ -1,0 +1,114 @@
+.recomendations {
+  width: 100%;
+}
+
+.recomendations-inner {
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rec-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.rec-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  grid-template-areas:
+    "recText1 recText1 recPerson1"
+    "recPerson2  recText2 recText2";
+  width: 100%;
+  max-width: 800px;
+}
+
+.rec-text-1 {
+  grid-area: recText1;
+  text-align: right;
+}
+
+.rec-text-2 {
+  grid-area: recText2;
+}
+
+.rec-person-1 {
+  grid-area: recPerson1;
+  border-left: $color2 solid 2px;
+}
+
+.rec-person-2 {
+  grid-area: recPerson2;
+  border-right: $color2 solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rec-text {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.rec-person {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.rec-person-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rec-person-name-2 {
+  text-align: right;
+}
+
+.rec-person-designation {
+  font-size: 20px;
+}
+
+.rec-person-designation-2 {
+  text-align: right;
+}
+
+@media only screen and (max-width: 800px) {
+  .recomendations-inner {
+    padding: 10% 2%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rec-content {
+    row-gap: 0px;
+    grid-template-areas:
+      "recText1 recText1 recText1"
+      "recPerson1 recPerson1 recPerson1"
+      "recText2 recText2 recText2"
+      "recPerson2 recPerson2 recPerson2";
+    width: 100%;
+    max-width: 800px;
+  }
+  .rec-person {
+    border: none;
+    margin-bottom: 50px;
+  }
+  .rec-person-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .rec-person-2 {
+    align-items: flex-start;
+  }
+  .rec-person-name {
+    border-top: $color2 solid 2px;
+  }
+  .rec-person-designation-2 {
+    text-align: left;
+  }
+}

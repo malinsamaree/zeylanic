@@ -1,0 +1,42 @@
+.cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #333;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 490;
+}
+.cookies-inner {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cookie-policy-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cookie-btn {
+  background: black;
+  padding: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  //   width: 100%;
+  //   max-width: 100px;
+}
+
+.cookie-btn:hover {
+  background: #666;
+  color: black;
+}
+
+.hide-cookies {
+  display: none;
+}

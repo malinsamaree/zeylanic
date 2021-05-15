@@ -1,0 +1,231 @@
+@import "_commonvars.scss";
+
+.hide {
+  display: none;
+  transition: all 0.5s;
+}
+.show {
+  display: block;
+}
+
+.graphics {
+  width: 100%;
+  overflow: hidden;
+  // transition: all 0.3s ease-in-out;
+}
+.graphics-inner {
+  // background: $color3;
+  padding: 15px;
+  width: 100%;
+}
+.graphics-title {
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.graphics-content {
+  perspective: 1500px;
+  width: 100%;
+  // background: red;
+  display: flex;
+  justify-content: center;
+}
+
+.graphics-content-inner {
+  perspective: 1500px;
+  width: 100%;
+  max-width: 1180px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 300px 150px 200px;
+  transition: transform 1s;
+
+  gap: 15px;
+  grid-template-areas:
+    "photo1 photo1 plakat plakat photo2 photo2 photo3 photo3"
+    "photo4 photo4 plakat plakat plakat2 plakat2 photo5 photo5"
+    "photo4 photo4 photo7 photo7 plakat2 plakat2 photo8 photo8";
+}
+
+.graphics-content:hover > .graphics-content-inner {
+  // transform: rotateX(60deg) skewY(5deg);
+}
+
+// .graphics-content:hover > .graphics-content-inner > .graphic-block {
+//   transform: translateZ(50px) translateX(0px) translateY(-80px);
+//   box-shadow: 0px 100px 30px -20px rgba(0, 0, 0, 0.25);
+// }
+
+.graphic-block {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.graphic-block:hover {
+  transform: scale(1.1);
+  transform-origin: center;
+  // transform-origin: center;
+  // transform: translateZ(50px) translateX(0px) translateY(-20px);
+  // filter: drop-shadow(0 0 30px #333);
+  // filter: 0px 100px 30px -20px rgba(0, 0, 0, 0.25);
+  // -webkit-box-shadow: 0px 100px 30px -20px rgba(0, 0, 0, 0.25);
+  // box-shadow: 0px 100px 30px -20px rgba(0, 0, 0, 0.25);
+}
+
+.graphic-block-1 {
+  grid-area: photo1;
+  background: $color4;
+}
+.graphic-block-2 {
+  grid-area: photo2;
+  background: url("../images/graphics/photo-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.graphic-block-3 {
+  grid-area: photo3;
+  background: url("../images/graphics/photo-7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.graphic-block-4 {
+  grid-area: photo4;
+  background: url("../images/graphics/photo-8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.graphic-block-5 {
+  grid-area: photo5;
+  background: $color3;
+}
+.graphic-block-7 {
+  grid-area: photo7;
+  background: url("../images/graphics/photo-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.graphic-block-8 {
+  grid-area: photo8;
+  background: $color11;
+}
+.graphic-block-9 {
+  grid-area: plakat;
+  background: url("../images/graphics/plakat_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.graphic-block-10 {
+  grid-area: plakat2;
+  background: url("../images/graphics/plakat_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// gallery
+
+.invisible {
+  opacity: 0;
+  transform: rotateX(-60deg);
+}
+
+.rotate-image {
+  animation-name: rotateImg;
+  animation-duration: 0.5s;
+}
+
+.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 500;
+}
+.gallery-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1500px;
+}
+.gallery-exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  cursor: pointer;
+}
+.gallery-exit:hover {
+  background: rgb(155, 155, 155);
+}
+.galary-img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  // transform: rotateX(10deg);
+}
+
+.galary-img1 {
+  background: url("../images/graphics/plakat_1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galary-img2 {
+  background: url("../images/graphics/plakat_2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galary-img3 {
+  background: url("../images/graphics/photo-2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galary-img4 {
+  background: url("../images/graphics/photo-3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galary-img5 {
+  background: url("../images/graphics/photo-7.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galary-img6 {
+  background: url("../images/graphics/photo-8.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotateX(30deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}

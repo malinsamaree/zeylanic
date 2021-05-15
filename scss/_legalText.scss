@@ -1,0 +1,32 @@
+.legal-text {
+  width: 100%;
+  //   background: red;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.legal-text-inner {
+  width: 100%;
+  max-width: 800px;
+  //   background: blue;
+  padding: 10% 15px;
+}
+
+.legal-text-title {
+  font-size: 24px;
+}
+
+.home-icon {
+  //   background: blue;
+  //   font-size: 36px;
+  cursor: pointer;
+}
+.material-icons-outlined {
+  font-size: 36px;
+  transition: 0.2s;
+}
+
+.material-icons-outlined:hover {
+  color: grey;
+}

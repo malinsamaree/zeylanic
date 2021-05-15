@@ -1,0 +1,176 @@
+@import "_commonvars.scss";
+.steps {
+  width: 100%;
+  overflow: hidden;
+}
+
+.steps-inner {
+  width: 100%;
+  background: $color9;
+
+  padding: 50px 10px;
+}
+
+.steps-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.steps-content {
+  width: 100%;
+  display: flex;
+  //   background: $color1;
+  justify-content: center;
+}
+.steps-content-inner {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  //   background: $color3;
+  justify-content: center;
+  //   align-items: center;
+}
+
+.steps-content-inner-left {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.steps-content-inner-right {
+  flex-basis: 60%;
+  color: white;
+  padding: 10px 10px 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+}
+
+.step-topic {
+  width: 100%;
+  padding: 10px;
+  //   text-align: right;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transform: skew(2deg, 0);
+
+  transition: ease-in-out 0.1s;
+}
+
+.step-heading-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.step-topic:hover {
+  transform: skew(2deg, 0) translateX(30px);
+}
+.step-topic-selected {
+  transform: skew(2deg, 0) translateX(30px);
+}
+
+.step-topic-1 {
+  background: $color1;
+  color: white;
+  // transform: skew(5deg, 0) translateX(30px);
+  //   justify-content: flex-end;
+}
+.step-topic-2 {
+  background: $color2;
+}
+.step-topic-3 {
+  color: white;
+  background: $color3;
+}
+.step-topic-4 {
+  background: $color4;
+}
+.step-topic-5 {
+  background: $color5;
+}
+.step-topic-6 {
+  background: $color6;
+}
+.step-topic-7 {
+  color: white;
+  background: $color7;
+}
+.step-topic-8 {
+  background: $color8;
+}
+
+.step-no {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: black;
+}
+
+.step-text {
+  display: none;
+  font-size: 18px;
+  color: white;
+  background: $color9;
+  padding: 5px;
+  text-align: justify;
+  width: 100%;
+  transition: 0.5s;
+  margin-top: 5px;
+  // transform: skew(-5deg, 0);
+}
+
+@media only screen and (max-width: 1280px) {
+  .steps-content-inner {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .steps-content-inner {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .step-topic {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .steps-content-inner-left {
+    flex-basis: 100%;
+  }
+  .steps-content-inner-right {
+    flex-basis: 0;
+    display: none;
+  }
+
+  // .step-text {
+  //   display: block;
+  // }
+  .step-topic:hover {
+    transform: skew(2deg, 0) translateX(0px);
+  }
+  .step-topic-selected {
+    transform: skew(2deg, 0) translateX(0);
+  }
+}

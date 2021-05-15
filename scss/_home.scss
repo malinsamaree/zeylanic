@@ -1,0 +1,153 @@
+@import "_commonvars.scss";
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: #f6f3ee;
+}
+
+.hamburger {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hamburger-zeylanic {
+  display: flex;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  //   font-weight: 500;
+}
+.hamburger-z,
+.hamburger-ylanic {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hamburger-e {
+  //   background: red;
+  height: 68px;
+  width: 42px;
+  position: relative;
+}
+
+.hamburger-e-bar {
+  width: 36px;
+  height: 5px;
+  background: red;
+}
+
+.hamburger-e-top {
+  width: 36px;
+  height: 5px;
+  background: red;
+  top: 12px;
+  left: 3px;
+  position: absolute;
+}
+.hamburger-e-inner {
+  position: relative;
+}
+.hamburger-e-heading {
+  position: absolute;
+  opacity: 0;
+  top: -12px;
+  font-size: 30px;
+  width: 150px;
+}
+.hamburger-e-heading-r {
+  text-align: right;
+  right: 0;
+}
+.hamburger-e-description {
+  font-size: 24px;
+  font-weight: 100;
+  width: 300px;
+  position: absolute;
+  top: 30px;
+  opacity: 0;
+}
+
+.hamburger-e-description-r {
+  right: 0;
+  text-align: right;
+}
+.hamburger-e-button {
+  background: #f6f3ee;
+  font-size: 14px;
+  border-bottom: $color7 solid 1px;
+  cursor: pointer;
+  padding: 5px;
+  // transition: 0.2s ease-in-out;
+}
+.hamburger-e-button:hover {
+  // background: $color7;
+  // color: white;
+  border-bottom: $color7 solid 5px;
+}
+.hamburger-e-contact {
+  cursor: pointer;
+  // border-bottom: $color7 solid 5px;
+  // z-index: 1000;
+}
+.hamburger-e-contact:hover {
+  text-decoration: underline;
+}
+.hamburger-e-middle {
+  top: 30px;
+  left: 3px;
+  position: absolute;
+}
+
+.hamburger-e-bottom {
+  top: 50px;
+  left: 3px;
+  position: absolute;
+}
+
+.hamburger-title {
+  text-align: center;
+}
+.hamburger-title h1 {
+  font-size: 28px;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.hamburger-scroller {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  z-index: 2;
+}
+
+.hamburger-scroller-inner {
+  width: 5px;
+  height: 1px;
+  background: black;
+  animation-name: scroller;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.hamburger-scroller-inner:hover {
+  // width: 10px;
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+@keyframes scroller {
+  0% {
+    height: 1px;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburger-e-description {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,132 @@
+.knowhow {
+  width: 100%;
+  padding: 10% 15%;
+}
+.knowhow-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.knowhow-des_1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.knowhow-content {
+  //   background: red;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.knowhow-block-title {
+  text-align: center;
+  display: none;
+}
+.knowhow-block-image {
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.knowhow-block-image-1 {
+  background: url("../images/technologies/html.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-2 {
+  background: url("../images/technologies/css.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-3 {
+  background: url("../images/technologies/js.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.knowhow-block-image-4 {
+  background: url("../images/technologies/php.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-5 {
+  background: url("../images/technologies/node.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-6 {
+  background: url("../images/technologies/mysql.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-7 {
+  background: url("../images/technologies/jquery.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-8 {
+  background: url("../images/technologies/wordpress.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-9 {
+  background: url("../images/technologies/woocommerce.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-10 {
+  background: url("../images/technologies/prestashop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-11 {
+  background: url("../images/technologies/elementor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.knowhow-block-image-12 {
+  background: url("../images/technologies/sass.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .knowhow-content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .knowhow {
+    width: 100%;
+    padding: 10% 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .knowhow-content {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+@media only screen and (max-width: 400px) {
+  .knowhow-content {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  .knowhow-des_1 {
+    // font-size: 18px;
+  }
+}

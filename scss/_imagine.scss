@@ -1,0 +1,226 @@
+@import "_commonvars.scss";
+
+.imagine {
+  width: 100%;
+  padding: 5%;
+  //   background: black;
+  background: #312d26;
+  color: white;
+}
+
+.just-imagine {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+.just-imagine-text {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.just-imagine-text-div-1 {
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.just-imagine-text-div-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.just-imagine-text-div-3 {
+  width: 100%;
+  max-width: 320px;
+  // min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  // background: red;
+}
+
+.just-imagine-circle {
+  width: 90px;
+  height: 90px;
+  background: white;
+  color: black;
+  font-size: 18px;
+  position: relative;
+}
+
+.just-imagine-circle-1 {
+  // border-top-left-radius: 15%;
+  // border-top-right-radius: 30%;
+  // border-bottom-left-radius: 20%;
+  // border-bottom-right-radius: 50%;
+  //   background: chocolate;
+  //   background: red;
+  // background: #6d3600;
+  transform: rotate(-5deg);
+  background: $color1;
+}
+
+.just-imagine-circle-2 {
+  // border-top-left-radius: 15%;
+  // border-top-right-radius: 30%;
+  // border-bottom-left-radius: 20%;
+  // border-bottom-right-radius: 50%;
+  //   background: cornflowerblue;
+  //   background: red;
+  // background: #b6740b;
+  background: $color6;
+  transform: rotate(5deg);
+}
+
+.just-imagine-circle-3 {
+  // border-top-left-radius: 15%;
+  // border-top-right-radius: 30%;
+  // border-bottom-left-radius: 20%;
+  // border-bottom-right-radius: 10%;
+  //   background: rgb(10, 102, 53);
+  //   background: red;
+  // background: #ac6700;
+  background: $color11;
+  transform: rotate(-5deg);
+}
+
+.just-imagine-circle-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  background: $color10;
+  //   background: black;
+  z-index: 4;
+}
+
+.just-imagine-circle-inner-2 {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.just-imagine-circle-1-inner {
+  // border-top-left-radius: 10%;
+  // border-top-right-radius: 20%;
+  // border-bottom-left-radius: 30%;
+  // border-bottom-right-radius: 30%;
+  transform: rotate(6deg);
+}
+
+.just-imagine-circle-2-inner {
+  // border-top-left-radius: 10%;
+  // border-top-right-radius: 15%;
+  // border-bottom-left-radius: 30%;
+  // border-bottom-right-radius: 30%;
+  transform: rotate(-5deg);
+}
+
+.just-imagine-circle-3-inner {
+  // border-top-left-radius: 25%;
+  // border-top-right-radius: 30%;
+  // border-bottom-left-radius: 20%;
+  // border-bottom-right-radius: 10%;
+  transform: rotate(5deg);
+}
+
+.just-imagine-text-div-4 {
+  margin-top: 30px;
+}
+
+.our-designs-are-content {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "attractive attractive responsive responsive"
+    "scalable scalable seo tested";
+  gap: 15px;
+  padding: 15px;
+}
+
+.our-designs-are-block {
+  background: white;
+  color: #312d26;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  //   border-top-left-radius: 20px;
+  //   border-top-right-radius: 5px;
+  //   border-bottom-left-radius: 5px;
+  //   border-bottom-right-radius: 5px;
+}
+
+.our-designs-are-attractive {
+  grid-area: attractive;
+}
+.our-designs-are-responsive {
+  grid-area: responsive;
+}
+.our-designs-are-scalable {
+  grid-area: scalable;
+}
+.our-designs-are-tested {
+  grid-area: tested;
+}
+.our-designs-are-seo {
+  grid-area: seo;
+}
+
+.responsive-icon {
+  background: url(../images/responsive_icon.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .our-designs-are-content {
+    width: 100%;
+  }
+  .imagine {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .our-designs-are-content {
+    grid-template-areas:
+      "attractive attractive responsive responsive"
+      "scalable scalable scalable scalable"
+      "seo seo tested tested";
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .our-designs-are-content {
+    grid-template-areas:
+      "attractive attractive attractive attractive"
+      "responsive responsive responsive responsive"
+      "scalable scalable scalable scalable"
+      "seo seo seo seo"
+      "tested tested tested tested";
+  }
+}
